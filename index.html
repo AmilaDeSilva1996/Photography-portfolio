@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="brand-name">
+                    <a href="">Amila</a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#"class="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <Section class="home-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="home-content">
+                    <h4>I'm Amila De Silva</h4>
+                    <h1>Photographer</h1>
+                </div>
+                
+            </div>
+            <a class="scroll" href="#">
+                <i class="fa fa-angle-double-down"></i>
+            </a>
+            
+        </div>
+
+    </Section>
+    <!---Home Section End--->
+    <!--about section-->
+    <section class="about" id="about">
+        <div class="row1">
+            <div class="col-2">
+                <img src="about.jpg" width="400px">
+
+            </div>
+            <div class="col-3">
+                <h1>About Me</h1>
+                <div class="underline1"></div>
+                <p>Success isn't always about greatness. 
+                    It's about consistency. Consistent<br> hard work gains success.Greatness will come</p>
+                <div class="row">
+                    <div class="stat-box">
+                        <h2>l5</h2>
+                        <h5>Awards won</h5>
+                    </div>
+                    <div class="stat-box">
+                        <h2>200</h2>
+                        <h5>Projects</h5>
+                    </div>
+                    <div class="stat-box">
+                        <h2>742</h2>
+                        <h5>Happy Clients</h5>
+                    </div>
+                    <div class="stat-box">
+                        <h2>1000+</h2>
+                        <h5>Shoots</h5>
+                    </div>
+                    
+                </div>
+                <a href="mailto:amilad269@gmail.com" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+<section class="services" id="services">
+    <h2 class="title">I will do</h2>
+    <div class="underline"></div>
+    <div class="works">
+        
+        <div class="work-img">
+            <img src="1.webp">
+            <h4>Wedding Photography</h4>
+        </div>
+        <div class="work-img">
+            
+            <img src="2.webp">
+            <h4>Portrait Photography</h4>
+        </div>
+        <div class="work-img">
+            <img src="3.jpg">
+            <h4>Fashion Photography</h4>
+        </div>
+        
+        
+    </div>
+    <div class="works">
+        
+        <div class="work-img">
+            <h4>Travel Photography</h4>
+            <img src="4.webp">
+        </div>
+        <div class="work-img">
+            <h4>Anniversary Photography</h4>
+            <img src="5.jpg">
+        </div>
+        <div class="work-img">
+            <h4>Event Photography</h4>
+            <img src="6.jpg">
+        </div>
+        
+        
+    </div>
+
+</section>
+<!--My works-->
+<section class="my-works" id="works">
+    <h2 class="title">My Works</h2>
+    <div class="underline2"></div>
+    <div class="myworks">
+        
+        <div class="mywork-img">
+            <img id="wed" src="1.webp">
+            <h3 class="h">Wedding Photography</h3>
+        </div>
+        <div class="mywork-img">
+            
+            <img src="2.webp">
+            <h3 class="h">Portrait Photography</h3>
+        </div>
+        <div class="mywork-img">
+            <img src="3.jpg">
+            <h3 class="h">Fashion Photography</h3>
+        </div>
+        
+        
+    </div>
+    <div class="myworks">
+        
+        <div class="mywork-img">
+            <h3 class="h">Travel Photography</h3>
+            <img src="4.webp">
+        </div>
+        <div class="mywork-img">
+            <h3 class="h">Anniversary Photography</h3>
+            <img src="5.jpg">
+        </div>
+        <div class="mywork-img">
+            <h3 class="h">Event Photography</h3>
+            <img src="6.jpg">
+        </div>
+    </div>
+</section>
+    <div class="gal">
+        <div class="menu">
+            <h4 id="cut">X</h4>
+        </div>
+        <div class="gal-img">
+            <img src="./1.webp">
+        </div>
+        
+    </div>
+<div class="footer">
+    <footer>
+        <p> @copy:2022.Tasty AmilaDS Photography</p>
+        
+    </footer>
+</div>
+<div class="chatbox">
+    <div class="chatmenu">
+        <h4 id="chatcut">X</h4>
+    </div>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <h4 class="txt-area">Submitted</h4>
+    <button type="submit" class="btn2">Send</button>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+      $("#cut").click(function(){
+        $(".gal").hide();
+      });
+      $("#wed").click(function(){
+        $(".gal").show();
+      });
+    });
+    $(document).ready(function(){
+        $(".contact").click(function(){
+        $(".chatbox").toggle();
+        $("textarea").show();
+        $(".txt-area").hide();
+        });
+    });
+    $(document).ready(function(){
+        $("#chatcut").click(function(){
+        $(".chatbox").hide();
+        });
+    });
+    $(document).ready(function(){
+        $(".btn2").click(function(){
+        $("textarea").hide();
+        $(".txt-area").show();
+        });
+    });
+    </script>   
+</body>
+
+</html>
